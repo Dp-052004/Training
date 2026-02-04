@@ -1,0 +1,11 @@
+Concept of Dynamic Programming and how it differs from Recursion??
+
+Answer: Dynamic programming(DP) is an optimization technique used to solve problems by breaking 
+them into smaller subproblems, solving the subproblems and storing the results for later use.
+
+
+DP differs from Recursion in the following points:
+1) Both breaks large problem into smaller subproblems but DP stores the result of the subproblems 
+for later use.
+2)Recursion repeatedly solves overlapping subproblems which DP doesn't.
+3)Recursion is slower for large input cases while DP is efficient. 

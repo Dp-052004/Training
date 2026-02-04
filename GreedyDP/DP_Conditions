@@ -1,0 +1,37 @@
+Two key properties required for Dynamic Programming
+
+1) Overlapping Subproblems
+
+A problem has overlapping subproblems if the same smaller subproblems 
+are solved multiple times.
+
+Example: Fibonacci
+
+Recursive tree:
+
+fib(5)
+ = fib(4) + fib(3)
+ = (fib(3) + fib(2)) + (fib(2) + fib(1))
+
+Here:
+
+fib(3) is computed twice
+fib(2) is computed multiple times
+
+This is overlapping subproblems. DP avoids this by storing results.
+
+2) Optimal Substructure
+
+A problem has optimal substructure if the optimal solution to the whole problem 
+depends on optimal solutions of its subproblems.
+
+Example: Shortest Path (Dijkstra / DP idea)
+
+To find shortest path from A → D:
+
+A → B → C → D
+
+If the best path from A to D goes through C, then:
+The path from A to C must also be optimal.
+
+So the solution is built from optimal smaller solutions.
